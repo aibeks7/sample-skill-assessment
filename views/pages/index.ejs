@@ -2,6 +2,97 @@
 <html lang="en">
 <head>
   <%- include('../partials/head'); %>
+  <script>
+    $(document).ready(() => {
+      $.ajax({
+        url: "http://localhost:8000/whales",
+        success: (data) => {
+          console.log('WHALES from API', data);
+          var html = '';
+          data.forEach(whale => {
+            html += `
+<div class="container-fluid nft-info-bar mt-4">
+    <div class="row">
+        <div class="col label">${whale.name}</div>
+        <div class="col text d-flex justify-content-end">Ξ781.9K</div>
+    </div>
+    <div class="row mt-2">
+        <div class="col">
+            <div class="progress" style="height: 4px;">
+                <div class="progress-bar" role="progressbar" style="width: ${ whale.bar }%;" aria-valuenow="${whale.bar}" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+</div>
+        `
+          })
+          $('#target-whales').html(html);
+        }
+      })  
+      $.ajax({
+        url: "http://localhost:8000/feed",
+        success: (data) => {
+          console.log('FEED from API', data);
+          var html = '';
+          data.forEach(feed => {
+            let pics = ""
+            for(let i = 0; i < feed.pics; i++) {
+              pics += `<img src="assets/images/6529.png" class="nft-img" />`
+            }
+            html += `
+    <div class="row">
+        <div class="col-5 left p-3">
+            <div class="nft-box">
+                <div class="nft-info">
+                    <h2>hodlponkz.eth</h2>
+                    <span class="nft-time">${feed.time}</span>
+                </div>
+                <div class="nft-action">
+                    <div class="nft-plus">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="nft-more">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-icon">
+                ${pics}
+            </div>
+        </div>
+        
+        <div class="col-7 right p-3">
+            <div class="container-fluid p-0">
+                <div class="row pb-3 nft-right-border">
+                    <div class="col-8 primary-text">${ feed.type } for ${ feed.price }</div>
+                    <div class="col-4 secondary-text pr-3 d-flex justify-content-end flex-row">310% below NFTi</div>    
+                </div>
+                <div class="row pt-2 nft-calculations">
+                    <div class="col-3">
+                        <div>NFTI</div>
+                        <div>Ξ760.12</div>
+                    </div>
+                    <div class="col-3">
+                        <div>ADJ. FLOOR</div>
+                        <div>Ξ720.42</div>
+                    </div>    
+                    <div class="col-6 d-flex justify-content-end flex-row">
+                        <div>
+                            <div>Est. ${ feed.result }</div>
+                            <div class="nft-profit ${ feed.result === 'profit' ? 'profit' : 'loss' }">${ feed.amount }</div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+    </div>
+`})
+          $('#target-feed').html(html);
+        }
+      })  
+    })
+  </script>
 </head>
 
 <body class="container-fluid">

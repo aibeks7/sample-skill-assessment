@@ -125,6 +125,10 @@
 .nft-content .nft-sidebar-container .nft-sidebar {
   background-color: #1A1A22;
 }
+.nft-content #target-feed {
+  padding: 0;
+  margin: 0;
+}
 
 .nft-feed-el .left {
   background-color: #1D1D26;
@@ -259,7 +263,14 @@
 .nft-sidebar .progress-bar {
   background-color: #1FA8D1;
 }
+.nft-sidebar #target-whales {
+  padding: 0;
+  margin: 0;
+}
 
+.nft-info-bar {
+  padding-left: 1rem;
+}
 .nft-info-bar .label {
   font-size: 0.9rem;
   font-weight: 500;

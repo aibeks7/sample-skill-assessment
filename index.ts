@@ -17,9 +17,13 @@ app.get('/', function (req, res) {
   res.render('pages/index', { feeds, whales });
 });
 
-// app.get('/feed', (req, res) => {
-//   res.send(feed);
-// });
+app.get('/feed', (req, res) => {
+  res.send(feeds);
+});
+
+app.get('/whales', (req, res) => {
+  res.send(whales);
+});
 
 app.listen(port, () => {
   console.log(`⚡️[server]: Server is running at http://localhost:${port}.`);

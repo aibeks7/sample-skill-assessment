@@ -16,9 +16,12 @@ app.use('/assets', express_1.default.static(path_1.default.join(__dirname, '../p
 app.get('/', function (req, res) {
     res.render('pages/index', { feeds: feed_json_1.default, whales: whales_json_1.default });
 });
-// app.get('/feed', (req, res) => {
-//   res.send(feed);
-// });
+app.get('/feed', (req, res) => {
+    res.send(feed_json_1.default);
+});
+app.get('/whales', (req, res) => {
+    res.send(whales_json_1.default);
+});
 app.listen(port, () => {
     console.log(`⚡️[server]: Server is running at http://localhost:${port}.`);
 });
