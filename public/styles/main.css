@@ -1,5 +1,64 @@
-h1 {
-  color: red;
+@import "http://fonts.googleapis.com/css?family=Inter";
+.nft-navbar {
+  height: 6.25rem;
+  background-color: #09090A;
+  padding: 0 1.6rem 0 1.6rem;
+}
+.nft-navbar > .navbar-nav {
+  height: 100%;
+}
+.nft-navbar > .navbar-nav > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: content-box;
+  position: relative;
+}
+.nft-navbar > .navbar-nav > li:not(:last-child) {
+  width: 7.7rem;
+}
+.nft-navbar > .navbar-nav > li.active:after {
+  content: "";
+  height: 5px;
+  background-color: #9452F7;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.nft-navbar a {
+  color: #F2F2F5;
+  font-family: Inter;
+}
+.nft-navbar a.nav-link {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.nft-navbar > .nft-page-title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: white;
+}
+.nft-navbar .nft-dots-menu {
+  background-color: #17161C;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5.25rem;
+  cursor: pointer;
+}
+.nft-navbar .nft-dots-menu > i {
+  color: #79798C;
+}
+
+body {
+  background-color: #09090A !important;
 }
 
 /*# sourceMappingURL=main.css.map */

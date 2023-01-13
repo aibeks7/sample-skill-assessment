@@ -1,5 +1,7 @@
-$color_red: red;
+@import "http://fonts.googleapis.com/css?family=Inter";
+@import "header";
+@import "variables";
 
-h1 {
-  color: $color_red;
+body {
+  background-color: $bg_color !important;
 }
