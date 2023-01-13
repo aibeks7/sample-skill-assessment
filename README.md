@@ -2,5 +2,5 @@
 
 ## TODO
 
-- Fix for < 1300px
+- Fix for < 1100px
 - Add mobile considerations
