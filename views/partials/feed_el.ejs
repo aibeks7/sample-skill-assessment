@@ -1,10 +1,11 @@
-<div class="container-fluid nft-feed-el">
+<% feeds.forEach(function (feed) { %>
+<div class="container-fluid nft-feed-el mt-2">
     <div class="row">
         <div class="col-5 left p-3">
             <div class="nft-box">
                 <div class="nft-info">
                     <h2>hodlponkz.eth</h2>
-                    <span class="nft-time">5 minutes ago</span>
+                    <span class="nft-time"><%= feed.time %></span>
                 </div>
                 <div class="nft-action">
                     <div class="nft-plus">
@@ -23,7 +24,7 @@
         <div class="col-7 right p-3">
             <div class="container-fluid p-0">
                 <div class="row pb-3 nft-right-border">
-                    <div class="col-8 primary-text">bought for Ξ245.2 ($442,102)</div>
+                    <div class="col-8 primary-text"><%= feed.type %> for <%= feed.price %></div>
                     <div class="col-4 secondary-text pr-3 d-flex justify-content-end flex-row">310% below NFTi</div>    
                 </div>
                 <div class="row pt-2 nft-calculations">
@@ -37,8 +38,8 @@
                     </div>    
                     <div class="col-6 d-flex justify-content-end flex-row">
                         <div>
-                            <div>Est. profit</div>
-                            <div class="nft-profit">Ξ514.92</div>
+                            <div>Est. <%= feed.result %></div>
+                            <div class="nft-profit <%= feed.result === 'profit' ? 'profit' : 'loss' %>"><%= feed.amount %></div>
                         </div>
                     </div>    
                 </div>
@@ -47,3 +48,4 @@
         </div>
     </div>
 </div>
+<% }); %>

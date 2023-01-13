@@ -4,10 +4,18 @@
     padding: 0 4.7rem;
     margin-top: 1.9rem;
     height: 40rem;
-
+    
     .nft-main {
         background-color: $secondary_bg_color;
         padding: 1.6rem 1.3rem;
+        overflow-y: scroll;
+        height: 40rem;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+
+        &::-webkit-scrollbar {
+            display: none;  /* Safari and Chrome */
+        }
 
         h3 {
             font-size: 1.25rem;

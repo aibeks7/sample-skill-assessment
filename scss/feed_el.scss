@@ -97,9 +97,17 @@
             font-size: 0.75rem;
             
             .nft-profit {
-                color: #3CD660;
                 font-weight: 700;
                 font-size: 0.9rem;
+                text-align: end;
+            }
+
+            .profit {
+                color: #3CD660;   
+            }
+            
+            .loss {
+                color: #BE3D2C
             }
         }
         

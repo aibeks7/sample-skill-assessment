@@ -120,6 +120,13 @@
 .nft-content .nft-main {
   background-color: #17161C;
   padding: 1.6rem 1.3rem;
+  overflow-y: scroll;
+  height: 40rem;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.nft-content .nft-main::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 .nft-content .nft-main h3 {
   font-size: 1.25rem;
@@ -218,9 +225,15 @@
   font-size: 0.75rem;
 }
 .nft-feed-el .right .nft-calculations .nft-profit {
-  color: #3CD660;
   font-weight: 700;
   font-size: 0.9rem;
+  text-align: end;
+}
+.nft-feed-el .right .nft-calculations .profit {
+  color: #3CD660;
+}
+.nft-feed-el .right .nft-calculations .loss {
+  color: #BE3D2C;
 }
 .nft-feed-el .right .nft-right-border {
   border-bottom: 1px solid #17161C;

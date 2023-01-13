@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Est. Profit",
+        "value": "Ξ781.9K",
+        "bar": 25
+    },
+    {
+        "name": "Est. Loss",
+        "value": "Ξ781.9K",
+        "bar": 50
+    },
+    {
+        "name": "Gas Fees",
+        "value": "Ξ781.9K",
+        "bar": 100
+    },
+    {
+        "name": "Bought",
+        "value": "Ξ781.9K",
+        "bar": 75
+    },
+    {
+        "name": "Sold",
+        "value": "Ξ781.9K",
+        "bar": 15
+    },
+    {
+        "name": "Transferred",
+        "value": "Ξ781.9K",
+        "bar": 5
+    },
+    {
+        "name": "Listed",
+        "value": "Ξ781.9K",
+        "bar": 10
+    }
+]
