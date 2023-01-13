@@ -1,0 +1,82 @@
+@import "variables";
+
+.nft-feed-el {
+    .left {
+        padding: 1rem 1.25rem;
+        background-color: #1D1D26;
+
+        .nft-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 2.5rem;
+            align-items: stretch;
+
+            .nft-info {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    color: $white_color;
+                    font-weight: 700;
+                    font-size: 0.9rem;
+                }
+    
+                .nft-time {
+                    color: #79798C ;
+                    font-weight: 500;
+                    font-size: 0.75rem; 
+                }
+            }
+            .nft-action {
+                display: flex;
+                flex-direction: row;
+                
+                .nft-plus {
+                    background-color: #282836;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 2.25rem;
+                    cursor: pointer;
+
+                    & > i {
+                        color: #9452F7;
+                        font-size: 0.8rem;
+                    }
+                }
+                .nft-more {
+                    background-color: #353547;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 2.25rem;
+                    cursor: pointer;
+
+                    & > i {
+                        font-size: 0.7rem;
+                        color: #F2F2F5;
+                    }
+                }
+            }
+        }
+
+        .nft-icon {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            gap: 0.25rem;
+
+            .nft-img {
+                border-radius: 2px;
+                background-color: #638596;
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+        }
+    }
+
+    .right {
+        background-color: #1D1D26;
+    }
+}

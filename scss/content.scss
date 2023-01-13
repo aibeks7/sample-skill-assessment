@@ -1,0 +1,26 @@
+@import "variables";
+
+.nft-content {
+    padding: 0 4.7rem;
+    margin-top: 1.9rem;
+    height: 40rem;
+
+    .nft-main {
+        background-color: $secondary_bg_color;
+        padding: 1.6rem 1.3rem;
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: $main_text_color;
+        }
+    }
+
+    .nft-sidebar-container {
+        padding-left: 1.8rem;
+
+        .nft-sidebar {
+            background-color: $third_bg_color;
+        }
+    }
+}
