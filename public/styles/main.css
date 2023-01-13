@@ -241,6 +241,12 @@
 
 .nft-sidebar {
   height: 100%;
+  border-radius: 0px 0px 2px 2px;
+  background-color: #17161C;
+}
+.nft-sidebar .nft-nav {
+  background-color: #1D1D26;
+  min-width: 100%;
 }
 .nft-sidebar .nft-button {
   border-radius: 31px;

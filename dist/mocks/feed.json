@@ -4,48 +4,55 @@
         "type": "bought",
         "price": "Ξ245.2 ($442,102)",
         "result": "profit",
-        "amount": "Ξ514.92"
+        "amount": "Ξ514.92",
+        "pics": 5
     },
     {
         "time": "15 minutes ago",
         "type": "sold",
         "price": "Ξ245.2 ($442,102)",
         "result": "loss",
-        "amount": "Ξ122.5"
+        "amount": "Ξ122.5",
+        "pics": 4
     },
     {
         "time": "20 minutes ago",
         "type": "listed",
         "price": "Ξ245.2 ($442,102)",
         "result": "profit",
-        "amount": "Ξ248.2"
+        "amount": "Ξ248.2",
+        "pics": 7
     },
     {
         "time": "1 hour ago",
         "type": "bought",
         "price": "Ξ245.2 ($442,102)",
         "result": "profit",
-        "amount": "Ξ382.4"
+        "amount": "Ξ382.4",
+        "pics": 6
     },
     {
         "time": "2 hours ago",
         "type": "bought",
         "price": "Ξ245.2 ($442,102)",
         "result": "profit",
-        "amount": "Ξ514.92"
+        "amount": "Ξ514.92",
+        "pics": 5
     },
     {
         "time": "3 hours ago",
         "type": "bought",
         "price": "Ξ245.2 ($442,102)",
         "result": "profit",
-        "amount": "Ξ514.92"
+        "amount": "Ξ514.92",
+        "pics": 5
     },
     {
         "time": "4 hours ago",
         "type": "bought",
         "price": "Ξ245.2 ($442,102)",
         "result": "profit",
-        "amount": "Ξ514.92"
+        "amount": "Ξ514.92",
+        "pics": 5
     }
 ]
