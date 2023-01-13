@@ -69,8 +69,8 @@
   font-weight: 500;
 }
 .nft-status .nft-col .nft-arrow {
-  margin-left: 0.6rem;
-  margin-right: 0.6rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 .nft-status .nft-col .nft-up-arrow {
   color: #2BC23F;
@@ -289,12 +289,19 @@
   height: 2rem;
   margin-left: 0.5rem;
 }
+.nft-dots-menu.small:hover, .nft-dots-menu.small.active {
+  background-color: #F2F2F5;
+}
+.nft-dots-menu.small:hover > i, .nft-dots-menu.small.active > i {
+  color: #17161C;
+}
 .nft-dots-menu > i {
   color: #79798C;
 }
 
 body {
   background-color: #09090A !important;
+  font-family: Inter;
 }
 
 /*# sourceMappingURL=main.css.map */
