@@ -2,8 +2,8 @@
 
 .nft-feed-el {
     .left {
-        padding: 1rem 1.25rem;
         background-color: #1D1D26;
+        border-right: 1px solid #17161C;
 
         .nft-box {
             display: flex;
@@ -78,5 +78,33 @@
 
     .right {
         background-color: #1D1D26;
+
+        .primary-text {
+            font-weight: 500;
+            color: #F2F2F5;
+            font-size: 0.9rem;
+        }
+
+        .secondary-text {
+            color: #79798C;
+            font-size: 0.75rem;
+        }
+
+        .nft-calculations {
+            color: #79798C;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 0.75rem;
+            
+            .nft-profit {
+                color: #3CD660;
+                font-weight: 700;
+                font-size: 0.9rem;
+            }
+        }
+        
+        .nft-right-border {
+            border-bottom: 1px solid #17161C;
+        }
     }
 }

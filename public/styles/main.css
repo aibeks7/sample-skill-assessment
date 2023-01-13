@@ -125,6 +125,7 @@
   font-size: 1.25rem;
   font-weight: 700;
   color: #F2F2F5;
+  margin-bottom: 1.5rem;
 }
 .nft-content .nft-sidebar-container {
   padding-left: 1.8rem;
@@ -134,8 +135,8 @@
 }
 
 .nft-feed-el .left {
-  padding: 1rem 1.25rem;
   background-color: #1D1D26;
+  border-right: 1px solid #17161C;
 }
 .nft-feed-el .left .nft-box {
   display: flex;
@@ -200,6 +201,29 @@
 }
 .nft-feed-el .right {
   background-color: #1D1D26;
+}
+.nft-feed-el .right .primary-text {
+  font-weight: 500;
+  color: #F2F2F5;
+  font-size: 0.9rem;
+}
+.nft-feed-el .right .secondary-text {
+  color: #79798C;
+  font-size: 0.75rem;
+}
+.nft-feed-el .right .nft-calculations {
+  color: #79798C;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.nft-feed-el .right .nft-calculations .nft-profit {
+  color: #3CD660;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.nft-feed-el .right .nft-right-border {
+  border-bottom: 1px solid #17161C;
 }
 
 body {
