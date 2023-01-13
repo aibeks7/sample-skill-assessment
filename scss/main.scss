@@ -4,6 +4,8 @@
 @import "status_bar";
 @import "content";
 @import "feed_el";
+@import "sidebar";
+@import "info-bar";
 
 body {
   background-color: $bg_color !important;

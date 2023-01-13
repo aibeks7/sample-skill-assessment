@@ -226,6 +226,47 @@
   border-bottom: 1px solid #17161C;
 }
 
+.nft-sidebar {
+  height: 100%;
+}
+.nft-sidebar .nft-button {
+  border-radius: 31px;
+  background: #17161C;
+  height: 2rem;
+  color: #79798C;
+  font-weight: 600;
+  border: none;
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+}
+.nft-sidebar .nft-button:hover, .nft-sidebar .nft-button.active {
+  background-color: #F2F2F5;
+  color: #17161C;
+}
+.nft-sidebar h4 {
+  color: #F2F2F5;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.nft-sidebar .progress {
+  background-color: #282836;
+}
+.nft-sidebar .progress-bar {
+  background-color: #1FA8D1;
+}
+
+.nft-info-bar .label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #79798C;
+}
+.nft-info-bar .text {
+  color: #F2F2F5;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
 body {
   background-color: #09090A !important;
 }

@@ -1,0 +1,37 @@
+@import "variables";
+
+.nft-sidebar {
+    height: 100%;
+
+    .nft-button {
+        border-radius: 31px;
+        background:  $secondary_bg_color;
+        height: 2rem;
+        color: #79798C;
+        font-weight: 600;
+        border: none;
+        margin-left: 0.5rem;
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+
+        &:hover, &.active {
+            background-color: #F2F2F5;
+            color: #17161C;
+        }
+    }   
+
+    h4 {
+        color: #F2F2F5;
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+
+    .progress {
+        background-color: #282836;
+    }
+
+    .progress-bar {
+        background-color: #1FA8D1;
+
+    }
+}
